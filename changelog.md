@@ -17,4 +17,7 @@ Oct 2nd 2:30pm 	  - Added zzz() function and gimme($id) function in first to dis
 					third quote. (MH)
 				  - Added shuck() function to display second quote. (MH)
 				  - Fixed merge conflicts in routes. (MH)
+				  - Fixed all the issues that were assigned to me. (MH)
+
+
 
