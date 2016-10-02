@@ -27,35 +27,4 @@ class First extends Application
         $this->render();
 	}
 
-	public function zzz(){
-
-		// View = Justone
-		$this->data['pagebody'] = 'justone';
-
-		// get the quote #2
-		$source = $this->quotes->get(1);
-
-		// populate the data
-		$this->data['who'] = $source['who'];
-		$this->data['mug'] = $source['mug'];
-		$this->data['what'] = $source['what'];
-
-		$this->render();
-	}
-
-	public function gimme($id){
-
-		// View = Justone
-		$this->data['pagebody'] = 'justone';
-
-		// get the quote #3. id grabs the quote #3.
-		$source = $this->quotes->get($id);
-
-		// populate the data
-		$this->data['who'] = $source['who'];
-		$this->data['mug'] = $source['mug'];
-		$this->data['what'] = $source['what'];
-
-		$this->render();
-	}
 }
