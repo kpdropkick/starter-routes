@@ -16,14 +16,14 @@ class First extends Application
 	public function index()
 	{
 		// this is the view we want shown
-		$this->data['pagebody'] = 'homepage';
+		$this->data['pagebody'] = 'justone';
 
 		// build the list of authors, to pass on to our view
-		$source = $this->quotes->all();
-		$authors = array ();
-		$tmp = $source[0];
-		$authors[] = array ('who' => $tmp['who'], 'mug' => $tmp['mug'], 'href' => $tmp['where'], 'what' => $tmp['what']);
-		$this->data['authors'] = $authors;
+		$source = $this->quotes->get(1);
+		$this->data['who'] = $source['who'];
+		$this->data['mug'] = $source['mug'];
+		$this->data['what'] = $source['what'];
+
         $this->render();
 	}
 
