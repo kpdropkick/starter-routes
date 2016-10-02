@@ -21,5 +21,9 @@ Oct 2nd 2:30pm 	  - Added zzz() function and gimme($id) function in first to dis
 
 Oct 2nd 2:45pm    - Added a new Welcome.php in the last folder that handles the last link. (GS)
 
+Oct 2nd 4:30pm    - Updated the config to allow hooks (GS)
+				  - Updated hooks.php to point to the new display_override.php inside the hooks folder (GS)
+				  - Created display_override.php to star out any 4-letter words excluding punctuation (GS)
+
 
 
