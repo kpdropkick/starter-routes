@@ -49,6 +49,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+$route['sleep'] 				= 'first/zzz';
+$route['lock/(:any)/(:any)'] 	= 'welcome/shucks';
+$route['show/(:num)']			= 'first/gimme/3';
+$route['dunno'] = function() {
+	
+
+	$file = '../data/test.jpg';
+
+	if (file_exists($file)) {
+		
+		header('Content-Type: image/jpg');
+		header('Content-Disposition: inline');
+		
+		readfile($file);
+		die();
+	}
+	
+		
+}; 
+$route['([a-zA-Z]{4})/bingo'] = 'bingo';
+$route['(comp\d+)/(.*)'] = 'wise/bingo';
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
