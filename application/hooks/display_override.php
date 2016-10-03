@@ -38,7 +38,7 @@ class Display_override
         foreach ($para as $words)
         {
 
-            if (strlen($words)==50 && preg_match("/[0-9.!?,;:]$/", $words)==false)
+            if (strlen($words)==4 && preg_match("/[0-9.!?,;:]$/", $words)==false)
                 $updated .= ' ****';
             else
                 $updated .= ' ' . $words;
